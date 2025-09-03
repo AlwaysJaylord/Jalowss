@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Monthsary Babe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #9b5de5, #f15bb5);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Floating hearts background */
+    .heart-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .heart-bg span {
+      position: absolute;
+      display: block;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 20px;
+      animation: float 10s linear infinite;
+      bottom: -50px;
+    }
+
+    .heart-bg span:nth-child(1) { left: 20%; animation-duration: 8s; font-size: 24px; }
+    .heart-bg span:nth-child(2) { left: 40%; animation-duration: 12s; font-size: 30px; }
+    .heart-bg span:nth-child(3) { left: 60%; animation-duration: 10s; font-size: 18px; }
+    .heart-bg span:nth-child(4) { left: 80%; animation-duration: 14s; font-size: 28px; }
+    .heart-bg span:nth-child(5) { left: 50%; animation-duration: 9s; font-size: 22px; }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-800px) rotate(360deg); opacity: 0; }
+    }
+
+    /* Content styling */
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .sub-heading {
+      font-size: 1.1rem;
+      color: #fbeaff;
+      margin-bottom: 25px;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 1s;
+    }
+
+    .card {
+      background: #fff;
+      color: #333;
+      border-radius: 20px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+      border: none;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1.5s ease forwards;
+      animation-delay: 2s;
+    }
+
+    .card h5 {
+      color: #9b5de5;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Love letter style */
+    .love-letter {
+      font-family: 'Georgia', serif;
+      font-size: 1rem;
+      line-height: 1.7;
+      text-align: left;
+      padding-left: 15px;
+      border-left: 3px solid #9b5de5;
+    }
+
+    .love-letter p {
+      margin-bottom: 0.8rem;
+    }
+
+    .signature {
+      margin-top: 15px;
+      font-style: italic;
+      text-align: right;
+      color: #6a0dad;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      margin-top: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 3s;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating hearts background -->
+  <div class="heart-bg">
+    <span>♥</span>
+    <span>♥</span>
+    <span>♥</span>
+    <span>♥</span>
+    <span>♥</span>
+  </div>
+
+  <div class="container text-center">
+    <h1 class="heading">Happy 1st Monthsary Babe <span class="heart">♥</span></h1>
+    <p class="sub-heading">First one is over, forever to go </p>
+
+    <div class="card p-4">
+      <div class="love-letter">
+        <p><strong>Dear Babe,</strong></p>
+        <p style="text-align: justify;">
+            Hi Babe, Happy First Monthsary Babe!
+            Thank you for everything. I really appreciate you from the very first time we talked until now. 
+            Thank you for giving me your time, both in our chats and in person.  
+            I am grateful that you allowed me to be part of your life.
+
+            There were times when you tried to push me away and it felt like things would not work.  
+            But now we are here, Babe. We made it. We are together.
+
+            Thank you for loving me always Babe.
+            Let us continue to grow in love and understanding.  
+
+            Right now, we need to show that we can chase our dreams and still make our relationship stronger.  
+            Life will bring challenges, but our bond is real and solid. 
+
+            I am sorry if I sometimes show bad traits. I am trying to be better every day.
+
+            I miss you so much, Babe. I am always excited to be with you.  
+            I love you deeply and I always will. 
+
+            Thank you for always choosing me. You are mine, Babe. 
+
+            I wish I could give you many kisses and tight hugs right now. 
+            I thank God so much for giving me someone like you. 
+            Take care always, Babe I’ll always be here for you, cheering you on and loving you with all my heart.
+        </p>
+        <p class="signature">Forever yours, <br> -Jaylord</p>
+      </div>
+    </div>
+
+    <footer>
+     I’d like to invite you for a simple lunch and drinks at Bigbrew after your exam. Let’s relax and enjoy some time together. 💜
+    </footer>
+  </div>
+
+</body>
+</html>
